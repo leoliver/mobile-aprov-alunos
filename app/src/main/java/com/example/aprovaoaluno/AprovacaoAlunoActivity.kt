@@ -7,12 +7,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+import androidx.appcompat.app.AppCompatDelegate
 
 class AprovacaoAlunoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_aprovacao_aluno)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) // Força o modo claro
 
         val editTextNota = findViewById<EditText>(R.id.notaAlunoInput)
         val buttonResultado = findViewById<Button>(R.id.buttonResultado)
@@ -34,11 +37,14 @@ class AprovacaoAlunoActivity : AppCompatActivity() {
                 Toast.makeText(this, "Nota inválido. Verifique os números inseridos.", Toast.LENGTH_SHORT).show()
                 textViewResultado.text = ""
             } else if (nota < 4){
-                textViewResultado.text = "Nota $nota. O aluno está reprovado!"
+                textViewResultado.text = "Nota: $nota. O aluno está reprovado!"
+                textViewResultado.setTextColor(getColor(R.color.corReprovacao))
             } else if (nota >= 4 && nota < 6) {
-                textViewResultado.text = "Nota $nota. O aluno está de recuperação!"
+                textViewResultado.text = "Nota: $nota. O aluno está de recuperação!"
+                textViewResultado.setTextColor(getColor(R.color.corRecuperacao))
             } else {
-                textViewResultado.text = "Nota $nota. O aluno foi aprovado!"
+                textViewResultado.text = "Nota: $nota. O aluno foi aprovado!"
+                textViewResultado.setTextColor(getColor(R.color.corAprovacao))
             }
 
         }

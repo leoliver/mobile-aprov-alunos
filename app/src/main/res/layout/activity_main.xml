@@ -5,16 +5,56 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/corFundo"
+    tools:context=".MainActivity">
 
-
-    <Button
-        android:layout_marginTop="300dp"
-        android:id="@+id/buttonNext"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/boas_vindas"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Próxima tela"
-        android:layout_marginHorizontal="100dp"/>
+        android:text="@string/boas_vindas"
+        android:textSize="26sp"
+        android:textColor="@color/textoPrincipal"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="160dp"
+        android:layout_height="155dp"
+        android:src="@drawable/snoopyfeliz"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@color/borda1"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/orientacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orientacao"
+        android:textSize="20sp"
+        android:textColor="@color/textoPrincipal2"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="25dp"/>
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela de Cálculo"
+        android:textSize="18sp"
+        android:textColor="@color/textoBotao1"
+        android:backgroundTint="@color/corBotao1"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="20dp"/>
+
 
 </LinearLayout>

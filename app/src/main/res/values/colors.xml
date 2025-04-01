@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="corBotao1">#00214E</color>
+    <color name="corBotao2">#607BE6</color>
+    <color name="corFundo">#BEDAEF</color>
+    <color name="corFundo2">#000633</color>
+    <color name="borda1">#212547</color>
+    <color name="borda2">#5880F6</color>
+    <color name="textoPrincipal">#1B1C4D</color>
+    <color name="textoPrincipal2">#0A0062</color>
+    <color name="textoBotao1">#B2D0EF</color>
+    <color name="textoBotao2">#00123E</color>
+    <color name="corCaixa">#FFFFFF</color>
+    <color name="corAprovacao">#A9F07F</color>
+    <color name="corRecuperacao">#F8AF61</color>
+    <color name="corReprovacao">#E76C6C</color>
+
 </resources>
