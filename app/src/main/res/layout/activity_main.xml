@@ -9,34 +9,12 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/notaAlunoView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Qual a nota do aluno?"
-        android:textSize="20dp"
-        android:layout_marginTop="70dp"/>
-
-    <EditText
-        android:id="@+id/notaAlunoInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:hint="Nota 0-10"/>
-
-    <TextView
-        android:id="@+id/resultadoAluno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:layout_marginVertical="15dp"/>
-
     <Button
-        android:id="@+id/buttonResultado"
+        android:layout_marginTop="300dp"
+        android:id="@+id/buttonNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Verificar situação"
+        android:text="Próxima tela"
         android:layout_marginHorizontal="100dp"/>
 
 </LinearLayout>
